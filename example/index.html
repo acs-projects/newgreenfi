@@ -17,6 +17,11 @@
         </div>
         <div class="block-wrapper">
               <div class="block">
+                  <p><span class="lnr lnr-hourglass"></span></p>
+                  <p class="counter-wrapper"><span class="time"></span></p>
+                  <p class="text-block">time elapsed since launch</p>
+              </div>
+              <div class="block">
                   <p><span class="lnr lnr-funnel"></span></p>
                   <p class="counter-wrapper"><span class="diesel"></span></p>
                   <p class="text-block">diesel saved</p>
@@ -41,7 +46,12 @@
     <script src="../animationCounter.js" charset="utf-8"></script>
     <script type="text/javascript">
     $('#counter-block').ready(function(){
-        $('.diesel').animationCounter({
+        $('.tome').animationCounter({
+          start: 1,
+          step: 1,
+          txt: ' seconds'
+        });  
+      $('.diesel').animationCounter({
           start: 346,
           step: 346,
           txt: ' gal'
