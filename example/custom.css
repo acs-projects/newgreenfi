@@ -18,7 +18,7 @@ html, body{ font-family: 'Raleway', sans-serif; color: #000000; font-size:20px; 
 
 /* icon */
 .lnr-wrapper{ margin-top: 20px }
-.lnr-funnel, .lnr-drop, .lnr-leaf { color: #000000; font-size: 45px; }
+.lnr-hourglass, .lnr-funnel, .lnr-drop, .lnr-leaf { color: #000000; font-size: 45px; }
 
 /* footer */
 footer{ position: absolute; bottom:10px; text-align: center; font-size: 14px; width: 98% }
