@@ -55,9 +55,15 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         var totalsec = Math.floor(distance / 1000);
+      
+        var dieselCostPerGal = 3.33;
+        var dieselGalPerHour = 1.6;
+        var dieselUsed = Math.floor(((dieselCostPerGal * dieselGalPerHour) / 60 / 60) * totalsec);
     
         document.getElementById("clock").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
+      
+        document.getElementById("diesel").innerHTML = dieselUsed + " gal"
 }, 1000);
     </script>
 
