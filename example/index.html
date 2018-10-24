@@ -59,9 +59,9 @@
         var dieselGalPerHour = 1.6;
         var dieselCostPerGal = 3.29;
         var carbonPerGalDiesel = 22.4;
-        var dieselGalSaved = Math.floor((dieselGalPerHour / 60 / 60) * totalsec);
-        var dieselCostSaved = Math.floor((dieselCostPerGal / 60 / 60) * totalsec);
-        var carbonSaved = Math.floor(((carbonPerGalDiesel * dieselGalPerHour) / 60 / 60) * totalsec);
+        var dieselGalSaved = ((dieselGalPerHour / 60 / 60) * totalsec);
+        var dieselCostSaved = ((dieselCostPerGal / 60 / 60) * totalsec);
+        var carbonSaved = (((carbonPerGalDiesel * dieselGalPerHour) / 60 / 60) * totalsec);
     
         document.getElementById("clock").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
         document.getElementById("diesel").innerHTML = dieselGalSaved + " gal";
